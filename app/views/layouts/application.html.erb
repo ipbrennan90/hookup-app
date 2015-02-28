@@ -7,10 +7,10 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-<%if current_user
+<%if current_user%>
  <%= link_to "Sign me outt!", sign_out_path %>
 <% else %>
-  <%= link_to "Sign me in!", sign_in_path 5>
+  <%= link_to "Sign me in!", sign_in_path %>
 <%end%>
 <%= yield %>
 

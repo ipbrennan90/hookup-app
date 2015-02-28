@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   root 'static_pages#index'
+  post 'sign-in', to: 'authentication#create'
   get 'sign-in', to: 'authentication#new'
   get 'sign-up', to: 'registrations#new'
   post "sign-up", to: 'registrations#create'
